@@ -1,3 +1,6 @@
+# on mac users its best to ignore this type of files in  GitHub:
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
