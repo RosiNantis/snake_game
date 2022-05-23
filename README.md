@@ -17,6 +17,17 @@ Run the game with:
     python snake/game.py 
 
 
+## Teting
+Run the tests with 
+    pytest
+
+or 
+    pytest -v
+
+Calculate test coverage with:
+
+    pytest --cov
+
 ### Licence
 
 (c) 2022 Alexandros Samartzis
