@@ -30,5 +30,10 @@ def test_move_left():
     new_position = move(position, 'left')
     assert new_position == (4,5)     # assert command: assert is throughing an exception 
 
+def test_move_right():
+    position = (5,5) # x, y
+    new_position = move(position, 'right')
+    assert new_position == (6,5)     # assert command: assert is throughing an exception 
+
 # To run the pyteest fole just press 
 # pytest in terminal or pytest test_snake.py
