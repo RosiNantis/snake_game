@@ -20,7 +20,7 @@ also see: uncle Bob  "clean Code Lectures"
 
 """
 
-from snake import move, VALID_DIRECTIONS
+from snake.moves import move, VALID_DIRECTIONS
 import pytest
 import random
 
