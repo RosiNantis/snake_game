@@ -1,4 +1,4 @@
-name: Snake
+name: snake_game
 
 on:
   push:
