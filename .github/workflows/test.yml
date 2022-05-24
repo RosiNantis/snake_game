@@ -1,4 +1,4 @@
-name: Scikit Sriracha Snake
+name: Snake
 
 on:
   push:
