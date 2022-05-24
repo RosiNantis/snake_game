@@ -2,7 +2,7 @@
 where we create the game snake for the spiced academy week11 class.
 
 
-#### MAc installation
+#### Mac installation
     pip install -r requirements.txt
 
 ##### On windows also do:
