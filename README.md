@@ -1,5 +1,8 @@
 # snake_game
-where we create the game snake for the spiced academy week11 class.
+
+![Python application](https://github.com/RosiNantis/snake_game/workflows/snake_game/badge.svg)
+
+where we create the game snake for the spiced academy week-11 class.
 
 
 #### Mac installation
