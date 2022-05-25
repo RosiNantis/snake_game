@@ -21,7 +21,7 @@ def test_create():
     assert p.size == (10,11)
 
 def test_is_obstacle():
-    """Check for obstacls on the playground
+    """Check for obstacles on the playground
     - is obstacle for coordinate inside gives True
     - is obstacle for coordinate outside gives False
     """
@@ -46,7 +46,7 @@ def test_add_food_boundary():
     assert p.food is None
 
 def test_add_food_boundary_sequence():
-    """Food is deletes if an invalid position is given"""
+    """Food is deleted if an invalid position is given"""
     p = Playground(5, 6)
     p.add_food((3,3))
     assert p.food is not None
@@ -70,6 +70,5 @@ def test_add_random_food_mock():
     p.add_random_food()
     assert p.food == (4,4)
     assert mm.call_count == 2
-
 
     

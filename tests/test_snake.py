@@ -43,7 +43,7 @@ def test_move(position, direction, expected):
     assert move(position,direction) == expected
 
 def test_move_random():
-    """feature: test random direction directions"""
+    """feature: test random directions"""
     # --> also see: hypothesis library
     for _ in range(100):
         x = random.randint(1,10)
@@ -58,6 +58,7 @@ def test_move_invalid_direction():
         move((1,1), 'dummy')
 
 # TODO : also test random positions
+
 def test_move_fraction():
     """This is an example of code that is not supposed to work"""
     position = (3.1415,5) # x, y

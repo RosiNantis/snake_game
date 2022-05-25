@@ -28,7 +28,7 @@ class Playground:
            self.food = None
 
     def add_random_food(self):
-        position  =(
+        position = (
             random.randint(1, self.xsize - 1),
             random.randint(1, self.ysize - 1)
         )

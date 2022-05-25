@@ -1,3 +1,4 @@
+from snake.playground import Playground
 import curses
 
 
@@ -12,21 +13,28 @@ KEY_COMMANDS = {97: LEFT, 100: RIGHT, 119: UP, 115: DOWN}
 screen = curses.initscr()
 curses.start_color()
 curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK)
+curses.init_pair(2, curses.COLOR_BLUE, curses.COLOR_BLACK)
 curses.curs_set(0)
 curses.noecho()
 curses.raw()
 screen.keypad(False)
 
-win = curses.newwin(80, 25, 0, 0)
+win = curses.newwin(40, 15, 0, 0)
 win.nodelay(True)
 
 
 def game_loop(screen):
     x, y = 5, 5
 
+    pg = Playground(30, 14)
+
     # draw
     screen.clear()
     screen.addch(y, x, "O", curses.color_pair(1))
+    for x in range(31):
+        for y in range(15):
+            if pg.is_obstacle((x, y)):
+                screen.addch(y, x, "#", curses.color_pair(2))
     win.refresh()
     screen.refresh()
 
@@ -44,6 +52,12 @@ def game_loop(screen):
             screen.addch(y, x, "O", curses.color_pair(1))
             win.refresh()
             screen.refresh()
+            for x in range(31):
+                for y in range(15):
+                    if pg.is_obstacle((x, y)):
+                        screen.addch(y, x, "#", curses.color_pair(2))
+
+
 
 
 if __name__ == "__main__":
