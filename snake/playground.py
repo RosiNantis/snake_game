@@ -1,7 +1,6 @@
 import random
 
 class Playground:
-
     def __init__(self,xsize,ysize):
         self.xsize = xsize
         self.ysize = ysize
@@ -16,7 +15,7 @@ class Playground:
         x, y = position
         if (
             0 < x < self.xsize and
-            0 < x < self.ysize
+            0 < y < self.ysize
         ):
             return False
         return True
@@ -33,3 +32,4 @@ class Playground:
             random.randint(1, self.ysize - 1)
         )
         self.add_food(position)
+        
