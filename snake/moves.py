@@ -1,3 +1,4 @@
+
 VALID_DIRECTIONS = {'left', 'up', 'right', 'down'}  
 
 def move(current_position: tuple, direction: str) -> tuple: 
@@ -16,3 +17,4 @@ def move(current_position: tuple, direction: str) -> tuple:
     else:
         new_position = x - 1 , y
     return new_position
+    
